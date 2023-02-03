@@ -26,7 +26,13 @@ axios.defaults.withCredentials = true;
 function App() {
   const dispatch = useDispatch();
 
-
+  useEffect(() => {
+    async function loginStatus() {
+      const status = await getLoginStatus();
+      dispatch(SET_LOGIN(status));
+    }
+    loginStatus();
+  }, [dispatch]);
 
   return (
     <BrowserRouter>
