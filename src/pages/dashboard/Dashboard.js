@@ -1,3 +1,5 @@
+
+
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import ProductList from "../../components/product/productList/ProductList";
@@ -30,6 +32,7 @@ const Dashboard = () => {
       <ProductSummary products={products} />
       <ProductList products={products} isLoading={isLoading} />
     </div>
+
   );
 };
 
