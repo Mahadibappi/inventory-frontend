@@ -9,10 +9,7 @@ const Home = () => {
   return (
     <div className="home">
       <nav className="container --flex-between ">
-        <div className="logo">
-          <RiProductHuntLine size={35} />
-        </div>
-
+        <div className="logo">Doventory</div>
         <ul className="home-links">
           <ShowOnLogout>
             <li>
@@ -49,9 +46,9 @@ const Home = () => {
             </button>
           </div>
           <div className="--flex-start">
-            <NumberText num="14K" text="Brand Owners" />
-            <NumberText num="23K" text="Active Users" />
-            <NumberText num="500+" text="Partners" />
+            <NumberText num="12K" text="Brand Owners" />
+            <NumberText num="30K" text="Active Users" />
+            <NumberText num="600+" text="Partners" />
           </div>
         </div>
 

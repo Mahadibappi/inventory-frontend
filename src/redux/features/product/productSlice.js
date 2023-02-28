@@ -125,6 +125,7 @@ const productSlice = createSlice({
       }, 0);
       state.totalStoreValue = totalValue;
     },
+
     CALC_OUTOFSTOCK(state, action) {
       const products = action.payload;
       const array = [];
@@ -231,7 +232,7 @@ const productSlice = createSlice({
         state.isLoading = false;
         state.isError = true;
         state.message = action.payload;
-        console.log(action.payload)
+        console.log(action.payload);
         toast.error(action.payload);
       });
   },
