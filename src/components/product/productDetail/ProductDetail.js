@@ -18,7 +18,9 @@ const ProductDetail = () => {
   const isLoggedIn = useSelector(selectIsLoggedIn);
   const { product, isLoading, isError, message } = useSelector(
     (state) => state.product
+
   );
+
 
   const stockStatus = (quantity) => {
     if (quantity > 0) {
@@ -47,7 +49,7 @@ const ProductDetail = () => {
             <Card cardClass="group">
               {product?.image ? (
                 <img
-                  src={product.image.filePath}
+                  src={product.image.url}
                   alt={product.image.fileName}
                 />
               ) : (

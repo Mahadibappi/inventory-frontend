@@ -231,6 +231,7 @@ const productSlice = createSlice({
         state.isLoading = false;
         state.isError = true;
         state.message = action.payload;
+        console.log(action.payload)
         toast.error(action.payload);
       });
   },

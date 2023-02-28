@@ -24,6 +24,7 @@ const EditProduct = () => {
   const [imagePreview, setImagePreview] = useState(null);
   const [description, setDescription] = useState("");
 
+
   useEffect(() => {
     dispatch(getProduct(id));
   }, [dispatch, id]);
@@ -32,7 +33,7 @@ const EditProduct = () => {
     setProduct(productEdit);
 
     setImagePreview(
-      productEdit && productEdit.image ? `${productEdit.image.filePath}` : null
+      productEdit && productEdit.image.url ? `${productEdit.image.url}` : null
     );
 
     setDescription(

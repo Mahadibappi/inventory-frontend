@@ -32,10 +32,10 @@ const AddProduct = () => {
     setProduct({ ...product, [name]: value });
   };
 
-  // const handleImageChange = (e) => {
-  //   setProductImage(e.target.files[0]);
-  //   setImagePreview(URL.createObjectURL(e.target.files[0]));
-  // };
+  const handleImageChange = (e) => {
+    setProductImage(e.target.files[0]);
+    setImagePreview(URL.createObjectURL(e.target.files[0]));
+  };
 
   const generateKSKU = (category) => {
     const letter = category.slice(0, 3).toUpperCase();
@@ -68,9 +68,12 @@ const AddProduct = () => {
       <h3 className="--mt">Add New Product</h3>
       <ProductForm
         product={product}
+        productImage={productImage}
+        imagePreview={imagePreview}
         description={description}
         setDescription={setDescription}
         handleInputChange={handleInputChange}
+        handleImageChange={handleImageChange}
         saveProduct={saveProduct}
       />
     </div>
