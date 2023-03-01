@@ -5,9 +5,7 @@ import { FaPhoneAlt, FaEnvelope, FaTwitter } from "react-icons/fa";
 import { GoLocation } from "react-icons/go";
 import { toast } from "react-toastify";
 import axios from "axios";
-import {
-  BACKEND_URL
-} from "../../services/authService";
+import { BACKEND_URL } from "../../services/authService";
 
 const Contact = () => {
   const [subject, setSubject] = useState("");
@@ -69,7 +67,7 @@ const Contact = () => {
               </span>
               <span>
                 <FaEnvelope />
-                <p>Support@iventory.com</p>
+                <p>Support@Doventory.com</p>
               </span>
               <span>
                 <GoLocation />

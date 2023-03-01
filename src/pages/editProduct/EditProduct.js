@@ -24,7 +24,6 @@ const EditProduct = () => {
   const [imagePreview, setImagePreview] = useState(null);
   const [description, setDescription] = useState("");
 
-
   useEffect(() => {
     dispatch(getProduct(id));
   }, [dispatch, id]);
